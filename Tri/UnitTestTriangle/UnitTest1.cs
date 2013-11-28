@@ -6,6 +6,14 @@ namespace UnitTestTriangle
     [TestClass]
     public class UnitTestTriangle
     {
+        [TestMethod()]
+        public void PointConstructorTest1()
+        {
+            Point target = new Point(1, 2);
+            Assert.AreEqual(1, target.x);
+            Assert.AreEqual(2, target.y);
+        }
+
         [TestMethod]
         public void TestIsScalene()
         {
